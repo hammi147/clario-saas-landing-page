@@ -1,0 +1,742 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clario helps teams organize projects, track progress, and work smarter with one simple workspace.">
+    <meta name="theme-color" content="#f8fafc">
+
+    <title>Clario — Work smarter, together</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Announcement bar -->
+    <div class="announcement-bar">
+        <p>
+            Meet a better way to manage work.
+            <a href="#features">Explore Clario <span aria-hidden="true">→</span></a>
+        </p>
+    </div>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a href="#home" class="brand" aria-label="Clario home">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <rect width="40" height="40" rx="12" fill="currentColor"/>
+                        <path d="M26.5 12.5C24.7 10.9 22.6 10 20 10C13.9 10 10 14.4 10 20C10 25.6 13.9 30 20 30C22.6 30 24.7 29.1 26.5 27.5L22.8 23.8C22 24.6 21.1 25 20 25C17.1 25 15.3 22.9 15.3 20C15.3 17.1 17.1 15 20 15C21.1 15 22 15.4 22.8 16.2L26.5 12.5Z" fill="white"/>
+                    </svg>
+                </span>
+                <span>clario</span>
+            </a>
+
+            <button class="menu-toggle" type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#features">Features</a>
+                <a href="#workflow">How it works</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQs</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#pricing" class="nav-login">View plans</a>
+                <a href="#get-started" class="btn btn-dark btn-small">
+                    Get started <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero section-padding" id="home">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+                    <div class="eyebrow">
+                        <span class="status-dot"></span>
+                        YOUR WORKSPACE, REIMAGINED
+                    </div>
+
+                    <h1>
+                        Great work starts with
+                        <span class="gradient-text">a little clarity.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Bring your projects, people, and priorities together.
+                        Clario gives your team a simpler way to plan work and
+                        move forward with confidence.
+                    </p>
+
+                    <div class="hero-actions" id="get-started">
+                        <a href="#pricing" class="btn btn-dark btn-large">
+                            Start exploring <span aria-hidden="true">→</span>
+                        </a>
+                        <a href="#workflow" class="btn btn-light btn-large">
+                            See how it works <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-note">
+                        <span class="check-icon" aria-hidden="true">✓</span>
+                        A clearer way to organize your day
+                    </div>
+
+                    <div class="hero-social-proof">
+                        <div class="avatar-stack" aria-hidden="true">
+                            <span class="avatar avatar-one">A</span>
+                            <span class="avatar avatar-two">J</span>
+                            <span class="avatar avatar-three">M</span>
+                            <span class="avatar avatar-four">S</span>
+                        </div>
+                        <div>
+                            <div class="proof-stars" aria-label="Decorative stars">★★★★★</div>
+                            <p>Designed around better teamwork</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product preview: illustrative demo interface -->
+                <div class="hero-visual">
+                    <div class="visual-glow"></div>
+
+                    <div class="floating-note floating-note-top">
+                        <span class="floating-icon purple">✦</span>
+                        <div>
+                            <strong>Stay focused</strong>
+                            <span>One clear priority at a time</span>
+                        </div>
+                    </div>
+
+                    <div class="app-window">
+                        <div class="app-topbar">
+                            <div class="window-dots" aria-hidden="true">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="app-window-title">Clario Workspace</span>
+                            <div class="app-topbar-right">•••</div>
+                        </div>
+
+                        <div class="app-layout">
+
+                            <aside class="app-sidebar" aria-label="Illustrative dashboard sidebar">
+                                <div class="app-mini-brand">
+                                    <span class="mini-brand-icon">C</span>
+                                    <span>clario</span>
+                                </div>
+
+                                <div class="sidebar-label">WORKSPACE</div>
+                                <div class="sidebar-item active">
+                                    <span>▦</span> Overview
+                                </div>
+                                <div class="sidebar-item">
+                                    <span>◷</span> My tasks
+                                </div>
+                                <div class="sidebar-item">
+                                    <span>▤</span> Projects
+                                </div>
+                                <div class="sidebar-item">
+                                    <span>♧</span> Team
+                                </div>
+
+                                <div class="sidebar-label sidebar-label-lower">YOUR SPACE</div>
+                                <div class="sidebar-item">
+                                    <span class="project-dot dot-violet"></span> Website redesign
+                                </div>
+                                <div class="sidebar-item">
+                                    <span class="project-dot dot-orange"></span> Product launch
+                                </div>
+                                <div class="sidebar-item">
+                                    <span class="project-dot dot-green"></span> Brand identity
+                                </div>
+
+                                <div class="sidebar-profile">
+                                    <div class="profile-avatar">JD</div>
+                                    <div>
+                                        <strong>Jordan Davis</strong>
+                                        <span>Workspace admin</span>
+                                    </div>
+                                </div>
+                            </aside>
+
+                            <div class="app-main">
+                                <div class="app-greeting">
+                                    <div>
+                                        <span class="app-date">MONDAY, YOUR WORKSPACE</span>
+                                        <h3>Good morning, Jordan <span>✦</span></h3>
+                                        <p>Here's what's happening with your work.</p>
+                                    </div>
+                                    <button class="app-add-button" type="button" aria-label="Example add button">+</button>
+                                </div>
+
+                                <div class="metric-grid">
+                                    <div class="metric-card">
+                                        <span>Active projects</span>
+                                        <strong>08</strong>
+                                        <small class="metric-positive">Across your workspace</small>
+                                    </div>
+                                    <div class="metric-card">
+                                        <span>Tasks completed</span>
+                                        <strong>24</strong>
+                                        <small class="metric-positive">This week</small>
+                                    </div>
+                                    <div class="metric-card">
+                                        <span>Due this week</span>
+                                        <strong>06</strong>
+                                        <small class="metric-neutral">Keep things moving</small>
+                                    </div>
+                                </div>
+
+                                <div class="app-panel">
+                                    <div class="panel-heading">
+                                        <div>
+                                            <h4>Project progress</h4>
+                                            <p>A quick look at your priorities</p>
+                                        </div>
+                                        <span class="panel-period">This week⌄</span>
+                                    </div>
+
+                                    <div class="progress-item">
+                                        <div class="progress-meta">
+                                            <span><i class="project-dot dot-violet"></i> Website redesign</span>
+                                            <strong>78%</strong>
+                                        </div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill fill-violet" style="width: 78%"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="progress-item">
+                                        <div class="progress-meta">
+                                            <span><i class="project-dot dot-orange"></i> Product launch</span>
+                                            <strong>54%</strong>
+                                        </div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill fill-orange" style="width: 54%"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="progress-item">
+                                        <div class="progress-meta">
+                                            <span><i class="project-dot dot-green"></i> Brand identity</span>
+                                            <strong>91%</strong>
+                                        </div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill fill-green" style="width: 91%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="app-bottom-row">
+                                    <div class="mini-task">
+                                        <span class="task-check">✓</span>
+                                        <div>
+                                            <strong>Review design concepts</strong>
+                                            <span>Website redesign · Today</span>
+                                        </div>
+                                    </div>
+                                    <span class="task-tag">In progress</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="floating-note floating-note-bottom">
+                        <span class="floating-icon green">✓</span>
+                        <div>
+                            <strong>Progress, made visible</strong>
+                            <span>Keep the whole team aligned</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Value proposition -->
+        <section class="trust-strip">
+            <div class="container trust-inner">
+                <p>LESS BUSYWORK. MORE MEANINGFUL WORK.</p>
+                <div class="trust-items">
+                    <span><i>✦</i> Clarity</span>
+                    <span><i>◈</i> Collaboration</span>
+                    <span><i>↗</i> Momentum</span>
+                    <span><i>◎</i> Focus</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features-section section-padding" id="features">
+            <div class="container">
+
+                <div class="section-heading centered">
+                    <div class="eyebrow"><span class="eyebrow-line"></span> EVERYTHING IN ONE PLACE</div>
+                    <h2>Less juggling.<br><span class="gradient-text">More getting done.</span></h2>
+                    <p>
+                        Good work doesn't need more complexity.
+                        It needs the right tools, in the right place.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+
+                    <article class="feature-card feature-card-large">
+                        <div class="feature-copy">
+                            <div class="feature-icon icon-lavender">▦</div>
+                            <h3>See the whole picture</h3>
+                            <p>
+                                Keep your projects, tasks, and next steps organized
+                                in a workspace that makes sense at a glance.
+                            </p>
+                            <a href="#workflow" class="text-link">
+                                Explore your workspace <span>→</span>
+                            </a>
+                        </div>
+
+                        <div class="feature-art overview-art" aria-hidden="true">
+                            <div class="art-window">
+                                <div class="art-window-top"><span></span><span></span><span></span></div>
+                                <div class="art-content">
+                                    <div class="art-heading-line"></div>
+                                    <div class="art-heading-short"></div>
+                                    <div class="art-cards">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="art-chart">
+                                        <div style="height: 36%"></div>
+                                        <div style="height: 57%"></div>
+                                        <div style="height: 43%"></div>
+                                        <div style="height: 76%"></div>
+                                        <div style="height: 62%"></div>
+                                        <div style="height: 91%"></div>
+                                        <div style="height: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon icon-peach">◷</div>
+                        <h3>Keep priorities clear</h3>
+                        <p>
+                            Break bigger goals into manageable tasks and
+                            understand what needs your attention next.
+                        </p>
+                        <div class="priority-list" aria-hidden="true">
+                            <div><span class="priority-check">✓</span> Plan the week <span class="priority-label done">Done</span></div>
+                            <div><span class="priority-check">✓</span> Review deliverables <span class="priority-label today">Today</span></div>
+                            <div><span class="priority-empty"></span> Share project update <span class="priority-label upcoming">Next</span></div>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon icon-mint">♧</div>
+                        <h3>Work better together</h3>
+                        <p>
+                            Give everyone a clearer view of progress, ownership,
+                            and what the team is working toward.
+                        </p>
+                        <div class="team-avatars" aria-hidden="true">
+                            <span class="team-avatar team-a">A</span>
+                            <span class="team-avatar team-b">J</span>
+                            <span class="team-avatar team-c">M</span>
+                            <span class="team-avatar team-d">S</span>
+                            <span class="team-count">+ your team</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Workflow -->
+        <section class="workflow-section section-padding" id="workflow">
+            <div class="container workflow-grid">
+
+                <div class="workflow-content">
+                    <div class="eyebrow"><span class="eyebrow-line"></span> SIMPLE BY DESIGN</div>
+                    <h2>A calmer workflow.<br><span class="gradient-text">A clearer next step.</span></h2>
+                    <p>
+                        Start with what matters, bring your team into the picture,
+                        and move from planning to progress without the clutter.
+                    </p>
+
+                    <div class="workflow-steps">
+                        <div class="workflow-step">
+                            <span class="step-number">01</span>
+                            <div>
+                                <h3>Bring your work together</h3>
+                                <p>Start with a clear view of your projects and priorities.</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step">
+                            <span class="step-number">02</span>
+                            <div>
+                                <h3>Make the next step obvious</h3>
+                                <p>Organize tasks so your team knows what matters most.</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step">
+                            <span class="step-number">03</span>
+                            <div>
+                                <h3>Make progress visible</h3>
+                                <p>See how the work is moving and where attention is needed.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#pricing" class="btn btn-dark btn-large">
+                        Find your plan <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="workflow-visual">
+                    <div class="workflow-orb orb-one"></div>
+                    <div class="workflow-orb orb-two"></div>
+
+                    <div class="workflow-board">
+                        <div class="board-header">
+                            <div>
+                                <span class="board-kicker">YOUR TEAM'S WORKSPACE</span>
+                                <h3>Project roadmap</h3>
+                            </div>
+                            <span class="board-menu">•••</span>
+                        </div>
+
+                        <div class="board-progress">
+                            <div class="board-progress-top">
+                                <span>Overall progress</span>
+                                <strong>72%</strong>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill fill-violet" style="width: 72%"></div>
+                            </div>
+                        </div>
+
+                        <div class="roadmap-item">
+                            <span class="roadmap-status status-complete">✓</span>
+                            <div class="roadmap-details">
+                                <strong>Discovery & planning</strong>
+                                <span>Goals, scope, and priorities</span>
+                            </div>
+                            <span class="roadmap-pill pill-complete">Complete</span>
+                        </div>
+
+                        <div class="roadmap-item">
+                            <span class="roadmap-status status-active">↗</span>
+                            <div class="roadmap-details">
+                                <strong>Design & development</strong>
+                                <span>Building the next version</span>
+                            </div>
+                            <span class="roadmap-pill pill-active">In progress</span>
+                        </div>
+
+                        <div class="roadmap-item">
+                            <span class="roadmap-status status-upcoming">3</span>
+                            <div class="roadmap-details">
+                                <strong>Review & delivery</strong>
+                                <span>Final checks and handoff</span>
+                            </div>
+                            <span class="roadmap-pill pill-upcoming">Upcoming</span>
+                        </div>
+
+                        <div class="board-footer">
+                            <div class="board-avatars" aria-hidden="true">
+                                <span>A</span><span>J</span><span>M</span>
+                            </div>
+                            <span>Example project preview</span>
+                        </div>
+                    </div>
+
+                    <div class="workflow-caption">
+                        <span class="caption-sparkle">✦</span>
+                        One workspace. A clearer direction.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="benefits-section section-padding">
+            <div class="container benefits-grid">
+
+                <div class="benefits-intro">
+                    <div class="eyebrow"><span class="eyebrow-line"></span> BUILT FOR BETTER WORK</div>
+                    <h2>Make room for<br><span class="gradient-text">your best work.</span></h2>
+                    <p>
+                        Less time searching for updates. More time doing
+                        the work that moves your goals forward.
+                    </p>
+                </div>
+
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-symbol">✳</div>
+                        <div>
+                            <h3>Find focus faster</h3>
+                            <p>See your priorities without sorting through unnecessary noise.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-symbol">◈</div>
+                        <div>
+                            <h3>Keep everyone aligned</h3>
+                            <p>Give your team a shared picture of the work ahead.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-symbol">↗</div>
+                        <div>
+                            <h3>Move forward with confidence</h3>
+                            <p>Turn plans into visible steps and steady progress.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="pricing-section section-padding" id="pricing">
+            <div class="container">
+
+                <div class="section-heading centered">
+                    <div class="eyebrow"><span class="eyebrow-line"></span> SIMPLE, FLEXIBLE PLANS</div>
+                    <h2>Choose what works<br><span class="gradient-text">for your team.</span></h2>
+                    <p>
+                        Start with the essentials and explore a plan that
+                        fits the way you work.
+                    </p>
+                </div>
+
+                <div class="pricing-grid">
+
+                    <article class="price-card">
+                        <div class="price-card-top">
+                            <span class="plan-label">STARTER</span>
+                            <h3>Essentials</h3>
+                            <p>For individuals organizing their day.</p>
+                            <div class="price"><strong>$0</strong><span>/ concept</span></div>
+                            <p class="price-note">Illustrative pricing for this design demo.</p>
+                        </div>
+
+                        <a href="#get-started" class="btn btn-outline btn-full plan-link">Explore essentials</a>
+
+                        <div class="plan-divider"></div>
+                        <p class="included-label">WHAT'S INCLUDED</p>
+                        <ul class="plan-features">
+                            <li><span>✓</span> Personal workspace concept</li>
+                            <li><span>✓</span> Task organization preview</li>
+                            <li><span>✓</span> Basic project overview</li>
+                            <li><span>✓</span> Clean, simple interface</li>
+                        </ul>
+                    </article>
+
+                    <article class="price-card price-card-featured">
+                        <div class="popular-badge">POPULAR CHOICE</div>
+                        <div class="price-card-top">
+                            <span class="plan-label">PRO</span>
+                            <h3>Professional</h3>
+                            <p>For growing teams with bigger goals.</p>
+                            <div class="price"><strong>$19</strong><span>/ user / month*</span></div>
+                            <p class="price-note">Illustrative pricing for this design demo.</p>
+                        </div>
+
+                        <a href="#get-started" class="btn btn-dark btn-full plan-link">Explore professional <span>→</span></a>
+
+                        <div class="plan-divider"></div>
+                        <p class="included-label">EVERYTHING IN ESSENTIALS, PLUS</p>
+                        <ul class="plan-features">
+                            <li><span>✓</span> Team workspace concept</li>
+                            <li><span>✓</span> Project progress overview</li>
+                            <li><span>✓</span> Shared task planning</li>
+                            <li><span>✓</span> Expanded project views</li>
+                        </ul>
+                    </article>
+
+                    <article class="price-card">
+                        <div class="price-card-top">
+                            <span class="plan-label">TEAMS</span>
+                            <h3>Business</h3>
+                            <p>For teams coordinating multiple projects.</p>
+                            <div class="price"><strong>$39</strong><span>/ user / month*</span></div>
+                            <p class="price-note">Illustrative pricing for this design demo.</p>
+                        </div>
+
+                        <a href="#get-started" class="btn btn-outline btn-full plan-link">Explore business</a>
+
+                        <div class="plan-divider"></div>
+                        <p class="included-label">EVERYTHING IN PRO, PLUS</p>
+                        <ul class="plan-features">
+                            <li><span>✓</span> Multiple project previews</li>
+                            <li><span>✓</span> Team coordination concepts</li>
+                            <li><span>✓</span> Workflow overview</li>
+                            <li><span>✓</span> Flexible workspace layout</li>
+                        </ul>
+                    </article>
+
+                </div>
+
+                <p class="pricing-disclaimer">
+                    *All plan prices and included features are illustrative demo content.
+                    Clario is presented here as a website concept, not a live subscription service.
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section section-padding" id="faq">
+            <div class="container faq-grid">
+
+                <div class="faq-intro">
+                    <div class="eyebrow"><span class="eyebrow-line"></span> GOOD TO KNOW</div>
+                    <h2>Questions?<br><span class="gradient-text">We've got clarity.</span></h2>
+                    <p>Some helpful answers about the Clario concept.</p>
+                    <a href="#get-started" class="text-link">Explore the page <span>→</span></a>
+                </div>
+
+                <div class="faq-list">
+
+                    <details class="faq-item" open>
+                        <summary>What is Clario?</summary>
+                        <p>
+                            Clario is a conceptual productivity SaaS brand designed to show
+                            how a modern project and task management product could be presented.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Is the dashboard connected to a live account?</summary>
+                        <p>
+                            No. The dashboard shown on this page is an illustrative UI preview.
+                            It does not connect to a database or user account.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Can a workspace be customized?</summary>
+                        <p>
+                            This page demonstrates a possible product direction. Real
+                            customization options would depend on the features built into
+                            an actual application.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Can I try the product?</summary>
+                        <p>
+                            This is a frontend design demo rather than a live software
+                            product. The links on this page help you explore its sections.
+                        </p>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta-section">
+            <div class="container">
+                <div class="final-cta">
+                    <div class="cta-decoration cta-decoration-one"></div>
+                    <div class="cta-decoration cta-decoration-two"></div>
+
+                    <div class="cta-content">
+                        <span class="cta-kicker"><span>✦</span> A CLEARER WAY FORWARD</span>
+                        <h2>Make your next move<br>your best one.</h2>
+                        <p>
+                            Less clutter. Better focus. A more thoughtful way
+                            to bring your work together.
+                        </p>
+                        <a href="#pricing" class="btn btn-white btn-large">
+                            Explore the plans <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                    <div class="cta-decoration-shape" aria-hidden="true">
+                        <div class="shape-ring ring-one"></div>
+                        <div class="shape-ring ring-two"></div>
+                        <div class="shape-ring ring-three"></div>
+                        <div class="shape-center">C</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-main">
+                <div class="footer-brand-column">
+                    <a href="#home" class="brand footer-brand">
+                        <span class="brand-mark" aria-hidden="true">
+                            <svg viewBox="0 0 40 40" fill="none">
+                                <rect width="40" height="40" rx="12" fill="currentColor"/>
+                                <path d="M26.5 12.5C24.7 10.9 22.6 10 20 10C13.9 10 10 14.4 10 20C10 25.6 13.9 30 20 30C22.6 30 24.7 29.1 26.5 27.5L22.8 23.8C22 24.6 21.1 25 20 25C17.1 25 15.3 22.9 15.3 20C15.3 17.1 17.1 15 20 15C21.1 15 22 15.4 22.8 16.2L26.5 12.5Z" fill="white"/>
+                            </svg>
+                        </span>
+                        <span>clario</span>
+                    </a>
+                    <p>A clearer way to bring work together.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <a href="#features">Features</a>
+                    <a href="#workflow">How it works</a>
+                    <a href="#pricing">Pricing</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <a href="#faq">FAQs</a>
+                    <a href="#home">Back to top ↑</a>
+                </div>
+
+                <div class="footer-column footer-note">
+                    <h3>About this page</h3>
+                    <p>
+                        Clario is an independent concept project created to demonstrate
+                        frontend design and development.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="current-year">2026</span> Clario Concept. Portfolio demo.</p>
+                <p>Designed with clarity <span class="footer-heart">✦</span></p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
